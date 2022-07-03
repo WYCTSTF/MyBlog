@@ -1,6 +1,6 @@
 ---
 title: 线代笔记
-categories: Linear Algebra
+categories: 线代
 mathjax: true
 ---
 
@@ -11,14 +11,6 @@ mathjax: true
 抛开这些，别的内容就是存粹给自己看的、不需要了之后就会删掉
 
 <!-- more -->
-
-# $\S 1$ 方程组的几何解释
-
-没问题产生，略
-
-# $\S 2$ 矩阵消元
-
-同上
 
 # $\S 3$ 矩阵的乘法和逆
 
@@ -53,7 +45,9 @@ $\begin{bmatrix}1&2&|&3\\4&5&|&6\end{bmatrix}$$\begin{bmatrix}1\\3\\-\\5\end{bma
 
 ## Q3. 如何证明 $square\ matrix$ 左逆等于右逆
 
-待填坑
+这个知道了矩阵乘法的含义就没有问题,设 $A$ 是 $n\times{n}$ 的矩阵，$\forall{i}\in[1,n]$，如果$AA^{-1}=I$，那么在 $A[i][j]=1$ 的时候，就有$A^{-1}[j][i]=1$，交换结合顺序，自然对于每个 $A^{-1}[i][j]=1$ 有 $A[j][i]=1$
+
+所以 $AA^{-1}=I=A^{-1}A$
 
 # $\S 4\ A$ 的 $LU$ 分解
 
@@ -160,4 +154,81 @@ $rref(A)$ 这个矩阵不难理解，就是A消元、回代然后矩阵分块
 ---
 
 # $\S 8$ $Ax=b$：可解性和解的结构
+
+就 $row\ rank$ 和 $column\ rank$ 的理解可能有一点小区别，我问了xy，说是一样，就是矩阵张成的空间维数，wxy说是行最简式和列最简式的区别，这样理解也对（虽然我学的都是行消元，对列最简式这个东西没概念..）
+
+## Q1. 为什么可逆方阵一定满秩
+
+发现自己关于逆矩阵含义的笔记基本没有，因此看书补充
+
+然后我才发现书上2.5这节提前的写了很多蛋疼的结论：
+
+1. The algorithm to test invertibility is elimination: A must have n(nonzero) pivots.
+2. The algebra test for invertibility is the determinant of A: det A must not be zero.
+3. The equation that tests for invertibility is $Ax=0:x=0$ must be the only solution.
+
+说什么行列式不为0，先往后看了再说吧
+
+$r=m<n$时，$R=[I\ F]$ 有无数解
+
+$r=n<m$时，$R=\begin{bmatrix}I\\0\end{bmatrix}$ 有0或1解，看特解是否存在
+
+$r=n=m$时，$R=[I]$ 有且仅有1解
+
+$r<n,r<m$时， 无解或者无穷多解
+
+---
+
+# $\S 9$ 线性相关、基、维数
+
+线性相关、张成一个空间，作为一个basis的对象都是向量组 a bunch of vectors 而非矩阵
+
+definition - 如果不存在结果为零向量的组合，向量组线性无关(except the zero comb)
+
+definition - Vectors $v_1,v_2,\dots,v_n$ span a space means: This space consists of all combinations of those vectors
+
+
+definition - Basis for a space is a sequence of vectors $v_1,v_2,\dots,v_n$ with 2 properties:
+  * They are independent
+  * They span the space
+
+n vectors gives basis if $n\times{n}$ matrix is invertible.
+
+他一直在讲可逆，但是又没教...
+
+基向量的个数就是空间的维数
+
+因此对于 $m * n$ 的矩阵 $A$ ，若秩为 $r$ ，那么 $C(A)$ 的维数是 $r$
+
+# $\S 10$ 四个基本子空间
+
+when A is ${m}\times{n}$ 四个基本子空间 $\begin{cases}C(A)&in\ R^m\\N(A)&in\ R^n\\R(A)=C(A^T)&in\ R^n\\N(A^T)&in\ R^m\end{cases}$
+
+一般管 $N(A^T)$ 叫左零空间
+
+1. dim of $C(A)=r$
+
+通过初等行变换和消元可知 $C(A)=r$
+
+2. dim of $N(A)=n-r$
+
+有 $n-r$ 个自由列，故有 $n-r$ 组特解构成零空间
+
+3. dim of $R(A)=$ dim of $R(rref(A))=r$
+
+消元到 reduced row echelon form 的时候，列向量会因为行变换改变，但是行空间的基两者还是一样的，秩为 $r$，那么 $A$ 的行空间的维数就是 $r$，要注意的是基和列空间不同，只是维数相同
+
+4. dim of $N(A^T)$
+
+考虑 $N(A^T)$ 中的向量 $y$，存在 $A^Ty=\begin{bmatrix}0\\\vdots\\0\end{bmatrix}\iff{y^tA=\begin{bmatrix}0&\cdots&0\end{bmatrix}}$
+
+这也是为什么习惯叫 N(A^T) 为左零空间的原因
+
+补充：
+
+左乘构造矩阵是行变换，例如 $\begin{bmatrix}0&1\\1&0\end{bmatrix}\begin{bmatrix}a&b\\c&d\end{bmatrix}=\begin{bmatrix}c&d\\a&b\end{bmatrix}$
+
+右乘构造矩阵是列变换，例如 $\begin{bmatrix}a&b\\c&d\end{bmatrix}\begin{bmatrix}0&1\\1&0\end{bmatrix}=\begin{bmatrix}b&a\\d&c\end{bmatrix}$
+
+----
 

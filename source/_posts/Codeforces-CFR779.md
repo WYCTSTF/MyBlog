@@ -1,10 +1,10 @@
 ---
-title: Codeforces Round 779 「B - F」
+title: Codeforces Round 779 (Div. 2)
 tags: 
 	- Codeforces
 	- Trie
 	- DP
-categories: OI/ACM
+categories: 贺题
 ---
 
 昨天凌晨发生了一件巨~~(好笑)~~丢人的事 整天处于呆滞状态 所以昨天咕了
@@ -412,7 +412,8 @@ We don't need more than 2 parts, or to say $𝑘\leq2$ is needed in this problem
 
 感觉这个+-1的思想和之前的#757 最后一题很像 不过那个维护要用动态开点权值树 这个明显好写很多
 
-{% fold code%}
+{% fold code %}
+
 ```cpp
 #include <bits/stdc++.h>
 #define rep(i,a,n) for(int i=a;i<=n;i++)
@@ -477,6 +478,7 @@ int main() {
 }
 ```
 {% endfold %}
+
 ---
 
 评论区说这是PermutationForces.. 属实是整把结论梭哈到底了

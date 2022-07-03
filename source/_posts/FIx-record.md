@@ -1,7 +1,7 @@
 ---
-title: 每周做题日记 & 一些记录「置顶」
+title: 贺题周记「置顶」
 top: 2
-categories: OI/ACM
+categories: 杂项
 tags: 
   - 计划
 mathjax: true
@@ -9,59 +9,32 @@ mathjax: true
 
 开个坑记录一下自己混了多久 一周周末算开头
 
-**为了阅读体验博客设置了代码折叠 但好像出了问题 打开文章是默认展开的 要收起得再刷新一遍**
-
 <!-- more -->
 
-[更高更妙的卡常](https://blog.mgt.moe/posts/constant-optimization/#循环展开) 刷知乎的时候看到 先挂在这儿 一般不会用到 我怀疑**更高更妙**这个梗说的是那本导数书...
+## 资料整理
 
-[Lambda表达式快速入门](https://blog.orzsiyuan.com/archives/Lambda-Expression/) OI-wiki里面讲的也很好 能用就行 真的要讲内容太多了 而且滥用可能被卡
-
-[如何像tourist一样流畅的切题](https://www.bilibili.com/video/BV1uT4y1P7CX/?spm_id_from=333.788.recommend_more_video.0)
-
-## 后期的一些计划
-
-[SGU](https://codeforces.com/problemsets/acmsguru) [UOJ](https://uoj.ac/) [LOJ](https://loj.ac) [Project Euler](https://projecteuler.net/archives)  [基本知识点](https://www.cnblogs.com/patricksu/p/7999877.html) 各种省选题 CEOI \ NEERC \ CERC
-
-BZOJ虽然寄了 但是有Hydro Vijos的new_bzoj 黑暗爆炸 属实光荣革命了.. 希望Hydro的能坚持下去..
-
-## [Hydro OJ](https://hydro.ac/)
-
-做的工作 只有牛逼两个字能概括了
-
-[神题题单](https://hydro.ac/d/bzoj/training/623b17324544086b8190c8e0)
-
-## Haskell
-
-[Mac配置Haskell环境](https://zhuanlan.zhihu.com/p/337893255) [洛谷日报教学1](https://www.luogu.com.cn/blog/i-love-illya/haskell-ru-men-yu-fa-shou-ce) [洛谷日报教学2](https://www.luogu.com.cn/blog/HoshinoTented/how-to-haskell-in-oi) [魔力Haskell](https://www.ituring.com.cn/book/tupubarticle/31222)
-
-## 颓颓颓
+* [更高更妙的卡常](https://blog.mgt.moe/posts/constant-optimization/#循环展开) 刷知乎的时候看到 先挂在这儿 一般不会用到 我怀疑**更高更妙**这个梗说的是那本导数书...
+* [各种知识点对应题目，非模板题非水题](https://hydro.ac/d/bzoj/training/623b17324544086b8190c8e0)
+* [Mac配置Haskell环境](https://zhuanlan.zhihu.com/p/337893255)
+* [类Unix系统配置Haskell工具链](https://zhuanlan.zhihu.com/p/455688955)
+* [魔力Haskell](https://www.ituring.com.cn/book/tupubarticle/31222)
+* [Haskell趣学指南](https://learnyouahaskell.mno2.org/zh-cn)
 * [M1 mac游玩MC的保姆级教程](https://www.wannaexpresso.com/2021/02/20/m1-macbook-minecraft/)
+* [Mac上更新TexLive版本](https://liam.page/2019/11/11/cross-release-update-TeX-Live-on-macOS/)
 
-## AT&CF补题情况
+## 2022.6.26
 
-从2022.3.31开始统计 前面的不浪费时间了..
- 
-{% fold record %}
-|场次|补题情况|赛时过题|截止日期|
-|:---:|:---:|:---:|:---:|
-|Codeforces Round #779 Div.2|4/4|3|2022.3.31|
-|(纯VP 04:00-6:10)Deltix Round, Autumn 2021(Div.1+Div.2)|1/5|3|2022.3.31|
-|Codeforces Round #780 (Div. 3)|3/3|4|2022.4.2|
-|CodeTON Round 1 (Div. 1 + Div. 2)|3/6|3|2022.4.3|
-{% endfold %}
+* Codeforces Global Round 21 A - C
+* CF1323 A - E
+* CF1398 C
 
-## 2022.5.1
+## 2022.6.19
 
-颓废一周
-
-## 2022.4.24
-
-颓废一周
-
-## 2022.4.17
-
-颓废一周
+* Codeforces Round #802 (Div. 2) A - D
+* CF1292B
+* CF1304C
+* CF1313D
+* CF431C
 
 ## 2022.4.10
 

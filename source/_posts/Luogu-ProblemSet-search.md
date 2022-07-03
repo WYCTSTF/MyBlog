@@ -4,7 +4,7 @@ tags:
   - DFS
   - BFS
   - 折半枚举
-categories: OI/ACM
+categories: 贺题
 ---
 
 练一练搜索水题

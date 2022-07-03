@@ -4,7 +4,7 @@ tags:
 	- 算法模板
   - KMP
   - Manacher
-categories: OI/ACM
+categories: 模板
 mathjax: true
 ---
 

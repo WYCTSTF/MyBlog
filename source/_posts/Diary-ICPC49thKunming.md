@@ -1,6 +1,6 @@
 ---
-title: ICPC 46th 昆明
-categories: Diary
+title: ICPC 46th 昆明打铁祭
+categories: 感想 \ 回忆
 ---
 
 半夜水了个div. 2的两题（属于是神智不清了） 然后想了想还是要写一点啥

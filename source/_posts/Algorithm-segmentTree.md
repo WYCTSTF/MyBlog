@@ -5,7 +5,7 @@ tag:
   - 动态开点
   - 线段树
   - 算法模板
-categories: OI/ACM
+categories: 模板
 ---
 
 没啥会的东西 先从线段树开始复习..

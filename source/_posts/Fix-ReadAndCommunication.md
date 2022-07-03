@@ -1,6 +1,6 @@
 ---
-title: 消除你内心的声音
-categories: Diary
+title: 消除内心的声音
+categories: 感想 \ 回忆
 ---
 
 这个平时不怎么关注，但是时刻影响着生活

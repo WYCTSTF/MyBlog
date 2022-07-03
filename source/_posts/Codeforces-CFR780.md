@@ -3,7 +3,7 @@ title: Codeforces Round 780 (Div. 3)
 tags: 
 	- 树状数组
 	- Codeforces
-categories: OI/ACM
+categories: 贺题
 ---
 
 太菜了 上不了大分

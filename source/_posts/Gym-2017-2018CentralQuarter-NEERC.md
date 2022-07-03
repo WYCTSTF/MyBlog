@@ -3,7 +3,7 @@ title: 2017-2018 ICPC Central Quarter Final of NEERC - C 「Magic FootBall」
 tags:
   - 思维
   - 剪枝
-categories: OI/ACM
+categories: 贺题
 description: XY给我推荐的一道好题
 ---
 
@@ -79,7 +79,7 @@ void dfs(int now, int left) {
 
 因此我们可以翻转实现前后拼接 上图说明会好一点 原谅我的劣质图示。。
 
-![](../../images/2017-2018CentralQuarter-NEERC.jpg)
+![](/images/2017-2018CentralQuarter-NEERC.jpg)
 
 那么主要的做法就很了然了 写了一遍 交上去
 

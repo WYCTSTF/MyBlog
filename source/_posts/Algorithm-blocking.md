@@ -4,7 +4,7 @@ tags:
   - 分块
   - 莫队
   - 算法模板
-categories: OI/ACM
+categories: 模板
 ---
 
 分块一种比较常见的区间维护手段 看[hzw的博客](http://hzwer.com/8053.html)和进阶指南学的

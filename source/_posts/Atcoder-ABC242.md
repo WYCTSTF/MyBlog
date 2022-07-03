@@ -3,7 +3,7 @@ title: Atcoder Beginner Contest 242
 tags: 
 	- Atcoder
 	- DP
-categories: OI/ACM
+categories: 贺题
 description: At的规律题还是一如既往的让人头疼..
 ---
 

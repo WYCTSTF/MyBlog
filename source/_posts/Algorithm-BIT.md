@@ -3,7 +3,7 @@ title: 基础树状数组
 tags: 
 	- 树状数组
 	- 算法模板
-categories: OI/ACM
+categories: 模板
 ---
 
 睡不着觉 根据以前写的破烂玩意儿复习一下树状数组

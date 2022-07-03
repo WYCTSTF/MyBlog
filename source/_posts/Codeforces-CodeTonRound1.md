@@ -4,7 +4,7 @@ tags:
 	- 分类讨论
 	- 模拟
 mathjax: true
-categories: OI/ACM
+categories: 贺题
 ---
 
 这场打的有点下饭 D竟然也是简单的分类讨论一下 只能说是不够冷静 没有仔细分析了

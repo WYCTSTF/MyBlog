@@ -1,6 +1,6 @@
 ---
 title: 洛谷P1032 [NOIP2002 提高组] 字串变换
-categories: OI/ACM
+categories: 贺题
 tags: 
   - KMP
   - 双向BFS

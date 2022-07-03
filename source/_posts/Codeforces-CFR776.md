@@ -1,9 +1,9 @@
 ---
-title: Codeforces Round 776 「B - E」
+title: Codeforces Round 776 (Div. 3)「B - E」
 tags: 
 	- Codeforces
 	- 模拟
-categories: OI/ACM
+categories: 贺题
 ---
 
 Div3.. 倒开车失败

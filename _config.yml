@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: SYH's blog
-subtitle: 此情度日久，此恨经年生
+title: SYH's Note
+subtitle: 好好学习
 description: ''
 keywords:
 author: SYH
@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://syh521.cn/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -103,8 +103,17 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:WYCTSTF/WYCTSTF.github.io.git
-  branch: main
+  # host: xycpp.top
+  # user: syh
+  # root: Blog
+  # port: 
+
+  # repo: git@github.com:WYCTSTF/WYCTSTF.github.io.git
+  # branch: main
+
+  repo: syh@xycpp.top:~/gitrepo/blog.git
+  branch: master
+  
 
 # Search
 search:

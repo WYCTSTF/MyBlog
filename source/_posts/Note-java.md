@@ -1,17 +1,14 @@
 ---
-title: Java基础知识笔记
-categories: Note
+title: Java笔记
+categories: Java
+description: 内容很少，随便记一点
 ---
 
-gwj讲的课不是很理想 还随手扯js MVC..
-
-先把理念搞搞懂好吧.. 布置的作业还是可以的 java听课的时间真不如拿来打炉石
+老师讲课的效果不是很理想 还随手扯js MVC.. 布置的作业还是可以的
 
 前面没什么困难 到了多线程这里开始有问题
 
 网上搜了点东西 要做笔记 说是笔记 其实也就是把网上的资料抄抄到一起 首选当然还是我的最爱[Runoob](https://www.runoob.com/)
-
-<!-- more -->
 
 ----
 
@@ -195,9 +192,6 @@ public static void main(String[] args) throws Exception {
 ```
 {% endfold %}
 
-实现Runnable的方式直接用join() 好像就不行 也可能是有啥我不知道的方法
-
-下面这个加了join还是没啥用
 
 {% fold code %}
 ```java
@@ -241,6 +235,7 @@ class RunnableDemo implements Runnable {
 		if (t == null) {
 			t = new Thread (this, threadName);
 			t.start();
+			t.join(); //如果想要控制顺序
 		}
 	}
 }
@@ -317,8 +312,6 @@ public class ticket_plus {
 		var dec = new DecThread();
 		add.start();
 		dec.start();
-		add.join();
-		dec.join();
 		System.out.println(Counter.count);
 	}
 }
@@ -347,6 +340,8 @@ class DecThread extends Thread {
 然后线程在一次执行的时候 可能一个线程的指令1刚刚执行完 后来的线程又打断了这个过程 因此前面的操作并不连续
 
 因此要给存储公共数据的对象添加加锁解锁的操作 使得三条指令在一个线程上做完 再进行下一次操作
+
+注意，`synchronized()`的操作的是一个对象，因此我们要给锁住的类写一个`static final object xxx`
 
 {% fold code %}
 ```java
@@ -759,6 +754,8 @@ public class FileClient {
 
 百度，都可以百度
 
+都可以自学
+
 <!-- ![](../images/winwin.jpg) -->
 
 作业9：
@@ -770,9 +767,11 @@ public class FileClient {
 4. 班委可以执行所有操作，其他成员只能修改自己的信息（学号不可以修改）
 5. 本系统基于GUI（可使用Swing或者JFX技术
 
-额 就他这个什么实际内容都不教的行为来看 酱紫布置作业确实挺逆天的
+<!-- 额 就他这个什么实际内容都不教的行为来看 酱紫布置作业确实挺逆天的 -->
 
-## 一些吐槽
+咕了，直接上个大作业，学个屁
+
+<!-- ## 一些吐槽
 
 GWJ：百度 都可以百度
 
@@ -784,7 +783,7 @@ GWJ：百度 都可以百度
 
 照着书上的内容，把10%不到的实例代码抄了一下，那么假定许多人在没学会的情况下，课后自己好好补上了，然后开始这个学期的Java，前面慢吞吞面向对象，后面一节课异常、一节课IO流、一节课线程、一节课网络编程、一节课序列化
 
-一节课2个小时的时间里面还要抽出大部分时间扯淡，真的很难绷住
+一节课2个小时的时间里面还要抽出大部分时间扯淡，真的很难绷住 -->
 
 ---
 

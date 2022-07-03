@@ -1,6 +1,6 @@
 ---
-title: 数论基础
-categories: OI/ACM
+title: 数论笔记
+categories: 模板
 tags:
     - 算法模板
     - 线性筛
@@ -13,6 +13,12 @@ tags:
 从老博客搬运过来...
 
 <!-- more -->
+
+upd: 2022.6
+
+学数学得到的启发：废话不用写上来
+
+之后的内容会尽可能精确，标准就是以我的角度能让零基础的人看懂即可
 
 # 数论基础
 
@@ -439,7 +445,7 @@ int main() {
 }
 ```
 {% endfold %}
-写完题目去拉屎，发现创客一楼厕所炸了，整个大厅一股屎味..
+
 
 ### 乘法逆元
 若整数$a,b$互质，并且$b|a$，则存在一个整数$x$，使得$a/b \equiv a * x \pmod m$，则称$x$为$b$的模$m$乘法逆元，记为$b^{-1}\pmod m$
@@ -447,3 +453,91 @@ int main() {
 因为$a/b \equiv a * b^{-1}\equiv a/b * b * b^{-1}\pmod m$，所以$b * b^{-1}\equiv 1\pmod m$
 
 因为$m$是质数，
+
+# 整除分块
+
+# 狄利克雷卷积
+
+Dilichlet Convolution
+
+定义在数论函数间的一种二元运算
+
+$f*g=\sum\limits_{d\mid{n}}f(d)g(\frac{n}{d})$
+
+## 一些常用的数论函数
+
+* $\varepsilon(n)=\begin{cases} 1,while\ n=1\\0,otherwise\end{cases}$
+* 
+
+# 莫比乌斯反演
+
+## 定义：
+
+常数函数 <b>$1$</b> 的 Dirichlet Inverse，我们将其称为莫比乌斯函数 $\mu$
+
+$\displaystyle\mu(n) = \begin{cases}\frac{1}{1(n)} & while\ n =1 \\ -\frac{1}{1(1)}\sum\limits_{d\mid n,d>1}1(d)\mu(\frac{n}{d}) & otherwise\end{cases}$
+
+$\forall$ 素数 $p$，有 $\mu(p) = -1, \mu(p^k)=0\ (k>1)$
+
+即$\mu(n) = \begin{cases}1 & while\ n=1 \\ (-1) ^ m & while\ n=p_1p_2\dots p_m \\ 0 & otherwise \end{cases}$
+
+其中 $p_1,\dots,p_m$ 都是质数
+
+## 莫比乌斯反演公式
+
+$\displaystyle g(n) = \sum\limits_{d\mid n}f(d) \iff f(n) = \sum\limits_{d\mid n}\mu(d)g(\frac{n}{d})$，卷积形式表示为 $\displaystyle g=f*1 \iff g * u = f$
+
+## 线性筛 $O(N)$ 求 $\mu(n)$
+
+```cpp
+bitset<N> vis;
+int mu[N];
+vector<int> primes;
+void init() {
+  mu[1] = 1;
+  for (int i = 2; i <= n; i++) {
+    if (vis[i] == 0) {
+      primes.push_back(i);
+      mu[i] = -1;
+    }
+    for (auto p : primes) {
+      if (p * i > n)
+        break;
+      vis[p * i] = 1;
+      if (p % i == 0) {
+        mu[i] = 0;
+        break;
+      } else
+        mu[p * i] = mu[p] * mu[i];
+    }
+  }
+}
+```
+
+## 性质
+
+$\mu$ 满足
+
+$$\sum\limits_{d\mid n}\mu(d) = \begin{cases} 1 & while\ n = 1 \\ 0 & otherwise \end{cases}$$
+
+即 
+$$\varepsilon = \mu * 1,\sum\limits_{d\mid n}\mu(d)=[n==1]=\varepsilon(n)$$
+
+### 证明：
+
+设 $n=\prod\limits_{i=1}^k{p_{i}^{c_i}}$, $n'=\prod\limits_{i=1}^k{p_i}$
+
+有
+$$\sum\limits_{d\mid n}{\mu(d)}=\sum\limits_{d\mid n'}\mu(d)=\sum\limits_{i=0}^k{C^i_k (-1)^i}=(1+(-1))^k$$
+
+当 $k = 0$ 时，$n =1$，值为 $1$，其余为 $0$
+
+二项式定理： $(x+y)^n=\sum\limits_{k=0}^n{\mathrm(_k^n)x^{n-k}y^k}$
+
+## 莫比乌斯变换
+
+## 莫比乌斯逆变换（反演）
+
+设 $f$, $g$ 为两个数论函数
+
+若 $$x = \prod\limits p_i^{c_i}$$

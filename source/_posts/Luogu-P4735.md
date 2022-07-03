@@ -2,7 +2,7 @@
 title: 洛谷P4735 最大异或和
 tags:
     - 可持久化Trie
-categories: OI/ACM
+categories: 贺题
 ---
 
 信誓旦旦的学了可持久化Trie和01Trie来搞，结果出了一点问题，被卡了好久

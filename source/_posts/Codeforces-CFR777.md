@@ -1,9 +1,9 @@
 ---
-title: Codeforces Round 777 「B - E」
+title: Codeforces Round 777 (Div. 2)「B - E」
 tags: 
 	- Codeforces
 	- 模拟
-categories: OI/ACM
+categories: 贺题
 ---
 
 梦游了..

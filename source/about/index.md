@@ -7,22 +7,22 @@ date: 2021-08-15 21:59:09
 
 这个博客随便写点笔记、做题记录 锻炼一下坚持的能力
 
-半个tulpa圈人.. 算是[二类宿主](https://tulpa.cn/2019/10/22/tulpa-category-2019/?variant=zh-cn) （听起来怪怪的）
+半个tulpa圈人.. 算是[二类宿主](https://tulpa.cn/2019/10/22/tulpa-category-2019/?variant=zh-cn)
 
 兰州理工，二本大一，QQ 996098413，欢迎闲聊
 
-<center><h1>Source Collection</h1></center>
+<!-- <center><h1>Source Collection</h1></center> -->
 
-## 书单
+<!-- ## 书单 -->
 
-* 猎魔人
+<!-- * 猎魔人
 * 霍乱时期的爱情
 * 小王子
 * 白夜行
 * 挪威的森林
 * 书剑恩仇录$\to$飞狐外传、雪山飞狐$\to$射雕英雄传$\to$神雕侠侣、倚天屠龙记$\to$白马啸西风$\to$天龙八部$\to$连城诀$\to$鸳鸯刀、侠客行$\to$笑傲江湖$\to$碧血剑、鹿鼎记$\to$越女剑
 
-暂时就这些 计划这个学期结束，也就是现在5.9-7月初 看掉
+暂时就这些 计划这个学期结束，也就是现在5.9-8月初 看掉
 
 猎魔人纯粹是个人爱好，因为巫师3剧情而入坑的，照xy的说法，先看一些关于爱情的书，从低入手
 
@@ -35,9 +35,9 @@ date: 2021-08-15 21:59:09
 ## 歌单
 ### 纯音
 * 巫师3
-  * [MasterMirror](https://www.youtube.com/watch?v=kKGmZN06lBI)
+  * [MasterMirror](https://www.youtube.com/watch?v=kKGmZN06lBI) -->
 
-## Tutorial
+<!-- ## Tutorial
 
 ### Latex
 * [通用 $\LaTeX$ 数学公式语法手册](https://uinika.gitee.io/Math/LaTex/)
@@ -56,7 +56,7 @@ date: 2021-08-15 21:59:09
 * [MIT 18.03 微分方程](https://www.bilibili.com/video/BV1Av411n7C6?p=1&share_medium=iphone&share_plat=ios&share_session_id=5AEDC239-1C12-4282-B451-047C2D8A2C4C&share_source=QQ&share_tag=s_i&timestamp=1652111605&unique_k=c5dp8AE)
 * [MIT 18.02 多变量微积分](https://www.bilibili.com/video/BV1Us411B7tn?p=1&share_medium=iphone&share_plat=ios&share_session_id=0618E7C8-5BED-4B18-A79C-FB12D596D649&share_source=QQ&share_tag=s_i&timestamp=1652111653&unique_k=9UvxdF7)
 
-### 算法
+### 算法 \ 计算数学
 * 《算法导论》
 * 《具体数学》
 * 《信息学奥赛数学一本通》
@@ -69,7 +69,7 @@ date: 2021-08-15 21:59:09
 * 《Foundations of Data Science》
 * 电路分析
 * 模拟电路
-* 数字电路
+* 数字电路 -->
 
 <!-- ### 补题计划
 * [Atcoder Beginner Contest 243 E - G](https://atcoder.jp/contests/abc243/tasks)

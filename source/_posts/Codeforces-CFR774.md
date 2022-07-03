@@ -1,11 +1,11 @@
 ---
-title: Codeforces Round 774 「C - E」
+title: Codeforces Round 774 (Div. 2)「C - E」
 tags: 
 	- 树形DP
 	- DFS
 	- 位运算
 	- Codeforces
-categories: OI/ACM
+categories: 贺题
 description: 好久没做CF了 要加练
 ---
 

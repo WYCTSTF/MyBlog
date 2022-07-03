@@ -7,7 +7,7 @@ tags:
   - Bellman-Ford
   - 最短路
   - 算法模板
-categories: OI/ACM
+categories: 模板
 ---
 
 记搜写到NOIP2017逛公园的时候 发现之前一直说复习最短路
