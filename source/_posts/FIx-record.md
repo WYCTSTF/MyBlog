@@ -21,6 +21,7 @@ mathjax: true
 * [Haskell趣学指南](https://learnyouahaskell.mno2.org/zh-cn)
 * [M1 mac游玩MC的保姆级教程](https://www.wannaexpresso.com/2021/02/20/m1-macbook-minecraft/)
 * [Mac上更新TexLive版本](https://liam.page/2019/11/11/cross-release-update-TeX-Live-on-macOS/)
+* [Hexo版本升级指南](https://novnan.github.io/Hexo/update_hexo/)
 
 ## 2022.6.26
 

@@ -232,3 +232,17 @@ when A is ${m}\times{n}$ 四个基本子空间 $\begin{cases}C(A)&in\ R^m\\N(A)&
 
 ----
 
+$\begin{bmatrix}A_{m\times{n}}&I_{m\times{m}}\end{bmatrix}\stackrel{左乘E}\rightarrow\begin{bmatrix}R_{m\times{n}}&E_{m\times{m}}\end{bmatrix}$
+
+即
+
+$E\begin{bmatrix}A&I\end{bmatrix}=\begin{bmatrix}R&E\end{bmatrix}$
+
+类似高斯消元，只不过这里 $A\to{R}$ 而非 $A\to{I}$ 所以 $E\ne{A^{-1}}$
+
+那么 $rref(A^T)$ 这个动作之后会得到 $m-r$ 个零行，$N(A^T)$ 的维数就一目了然了
+
+而基则是 $E$ 中对应的行向量，一目了然，因为对应的行向量其实就是我们找的 $y$
+
+# $\S 14$ 正交向量和子空间
+
